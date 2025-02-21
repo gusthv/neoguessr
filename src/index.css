@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+.gm-border iframe + div {
+  border: none !important;
+}
+
+.gm-cursor:first-of-type > div:nth-child(1) {
+  cursor: crosshair !important;
+}
+
+.custom-marker {
+  background-color: blue;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
